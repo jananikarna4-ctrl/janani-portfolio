@@ -1,0 +1,28 @@
+#root {
+  min-height: 100vh;
+  background: #0b0f0d;
+}
+
+.section-container {
+  width: min(100% - 3rem, 80rem);
+  margin-inline: auto;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.emerald-glow {
+  box-shadow:
+    0 0 40px rgba(16, 185, 129, 0.08),
+    0 0 100px rgba(16, 185, 129, 0.04);
+}
+
+@media (max-width: 640px) {
+  .section-container {
+    width: min(100% - 2rem, 80rem);
+  }
+}
